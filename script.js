@@ -83,22 +83,73 @@ function cekBtn6() {
 }
 
 //----------------------------------------------------------
+let arr =[
+    {
+        narh: "299 000 so’m" ,
+        nomi: " Apple Airpods Pro simsiz quloqchin , Oq rangda",
+        buyrtma: "1230 ta buyurtma",
+    },
+    {
+        narh: "16 114 285 so'm" ,
+        nomi: " Apple Macbook Pro 13 2.4 2019 Intel core i5",
+        buyrtma: "230 ta buyurtma",
+    },
+    {
+        narh: "4 234 000 so’m" ,
+        nomi: " Apple watch 4 , 2019 Oq rangda  ",
+        buyrtma: "543 ta buyurtma",
+    },
+    {
+        narh: "1 340 000 so’m" ,
+        nomi: " Robot - tozalagich Xiaomi Mi Robot",
+        buyrtma: "876 ta buyurtma",
+    },
+    {
+        narh: "1 345 000 so’m" ,
+        nomi: " Oynali Fotoaparat Canon EOS 6D Body",
+        buyrtma: "565 ta buyurtma",
+    },
+    {
+        narh: "299 000 so’m" ,
+        nomi: " Apple Airpods Pro simsiz quloqchin , Oq rangda",
+        buyrtma: "1230 ta buyurtma",
+    },
+    {
+        narh: "16 114 285 so'm" ,
+        nomi: " Apple Macbook Pro 13 2.4 2019 Intel core i5",
+        buyrtma: "230 ta buyurtma",
+    },
+    {
+        narh: "4 234 000 so’m" ,
+        nomi: " Apple watch 4 , 2019 Oq rangda  ",
+        buyrtma: "543 ta buyurtma",
+    },
+    {
+        narh: "1 340 000 so’m" ,
+        nomi: " Robot - tozalagich Xiaomi Mi Robot",
+        buyrtma: "876 ta buyurtma",
+    },
+    {
+        narh: "1 345 000 so’m" ,
+        nomi: " Oynali Fotoaparat Canon EOS 6D Body",
+        buyrtma: "565 ta buyurtma",
+    },
+]
 
 let wrapper = document.querySelector('#wrapper');
-for(let i = 0 ; i < 10 ; i++){
+for(let i = 0 ; i < arr.length; i++){
     let card = document.createElement('div');
     card.innerHTML=`
      <div class="w-[230px]  p-[10px] pl-[20px] bg-white rounded-[10px] relative">
        <img src="./assets/imgs/image11.png" alt="img">
        <p class="text-[#0D63F3] text-[18px] font-[591] mb-[6px]">
-           299 000 so’m
+           ${arr[i].narh}
        </p>
        <p class="text-[#1E1E1E] text-[14px] font-[539] mb-[33px]">
-           Apple Airpods Pro <br>
-           simsiz quloqchin , Oq rangda
+           ${arr[i].nomi}
        </p>
        <p class="text-[14px] font-[539] text-[#6C757D] mb-[25px]">
-           1230 ta buyurtma
+           ${arr[i].buyrtma}
         </p>
         <span class="flex items-center gap-[36px]">
         <button class="rounded-lg bg-[#0D63F3] py-[10px] px-[24px] hover:bg-blue-800">
