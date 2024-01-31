@@ -8,7 +8,7 @@ let carusel1 = document.querySelector('.carusel1');
 let btn3 = document.querySelector('#btn3');
 let btn4 = document.querySelector('#btn4');
 let img1 = document.querySelectorAll('.carusel1 img');
-//----------------------------------------------------
+//----------------------------------------------2 carusel
 let carusel2 = document.querySelector('.carusel2');
 let btn5 = document.querySelector('#btn5');
 let btn6 = document.querySelector('#btn6');
@@ -137,6 +137,37 @@ let arr =[
 ]
 
 let wrapper = document.querySelector('#wrapper');
+let wrapper2 = document.querySelector('#wrapper2');
+
+for(let i = 0 ; i < arr.length; i++){
+    let card = document.createElement('div');
+    card.innerHTML=`
+     <div class="w-[230px]  p-[10px] pl-[20px] bg-white rounded-[10px] relative">
+       <img src="./assets/imgs/image11.png" alt="img">
+       <p class="text-[#0D63F3] text-[18px] font-[591] mb-[6px]">
+           ${arr[i].narh}
+       </p>
+       <p class="text-[#1E1E1E] text-[14px] font-[539] mb-[33px]">
+           ${arr[i].nomi}
+       </p>
+       <p class="text-[14px] font-[539] text-[#6C757D] mb-[25px]">
+           ${arr[i].buyrtma}
+        </p>
+        <span class="flex items-center gap-[36px]">
+        <button class="rounded-lg bg-[#0D63F3] py-[10px] px-[24px] hover:bg-blue-800">
+            <a href="#" class="text-white">Sotib olish</a>
+        </button>
+        <img src="./assets/imgs/shopping.svg" alt="shopping">
+        </span>
+        <img src="./assets/imgs/favorite.svg" alt="favorite" class="absolute top-3 right-3">
+        <p class="py-[2px] px-[10px] bg-[#FF0101] text-[16px] text-white font-normal inline-block rounded-sm absolute top-[10px] left-[10px]"> Top sale</p>
+      </div>
+    `;
+    wrapper.appendChild(card);
+    // wrapper2.appendChild(card);
+
+}
+
 for(let i = 0 ; i < arr.length; i++){
     let card = document.createElement('div');
     card.innerHTML=`
@@ -160,6 +191,7 @@ for(let i = 0 ; i < arr.length; i++){
         <img src="./assets/imgs/favorite.svg" alt="favorite" class="absolute top-3 right-3">
       </div>
     `;
-    wrapper.appendChild(card);
+    // wrapper.appendChild(card);
+    wrapper2.appendChild(card);
 
 }
