@@ -71,11 +71,17 @@
         <section>
             <div class="container mx-auto px-4 w-[1262px]">
                 <div class="relative my-10">
-                    <img src="./assets/imgs/imge1.jpg" alt="img" class="rounded-lg">
-                    <button class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-[50%] absolute right-[-62px] top-[178px]">
+                   <div class="overflow-hidden">
+                     <div class="carusel1 flex items-start duration-1000 ">
+                        <img src="./assets/imgs/imge1.jpg" alt="img" class="rounded-[23px] w-[100%]  block">
+                        <img src="./assets/imgs/carusel1img2.jpg" alt="img" class="rounded-[23px] w-[100%]   block">
+                        <img src="./assets/imgs/carusel1img3.jpg" alt="img" class="rounded-[23px] w-[100%] h-[100%]  block">
+                     </div>
+                   </div>
+                    <button id="btn3" class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-[50%] absolute right-[-62px] top-[178px]" onclick="cekBtn3()">
                         <img src="./assets/imgs/keyboard_arrow_right.svg" alt="keyboard_arrow_right">
                     </butto>
-                    <button class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-pink-200 to-purple-200 rounded-[50%] absolute left-[-62px] top-[178px]">
+                    <button id="btn4" class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-pink-200 to-purple-200 rounded-[50%] absolute left-[-62px] top-[178px]" onclick="cekBtn4()">
                         <img src="./assets/imgs/keyboard_arrow_left.svg" alt="keyboard_arrow_left">
                     </button>
                     <div class="flex items-center justify-center gap-4 mt-5">
@@ -402,23 +408,24 @@
         <section>
             <div class="container mx-auto px-4 w-[1262px]">
                 <div class="relative my-10">
-                    <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg">
-                    <button
-                        class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-[50%] absolute right-[-62px] top-[108px]">
-                        <img src="./assets/imgs/keyboard_arrow_right.svg" alt="keyboard_arrow_right">
-                        </butto>
-                        <button
-                            class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-pink-200 to-purple-200 rounded-[50%] absolute left-[-62px] top-[108px]">
-                            <img src="./assets/imgs/keyboard_arrow_left.svg" alt="keyboard_arrow_left">
-                        </button>
-                        <div class="flex items-center justify-center gap-4 mt-5">
-                            <span
-                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r  from-purple-500 to-pink-500"></span>
-                            <span
-                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
-                            <span
-                                class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                    <div class="overflow-hidden">
+                        <div class="carusel2 flex items-start duration-1000">
+                            <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%]  block">
+                            <img src="./assets/imgs/image2k.png" alt="img" class="rounded-lg w-[100%] block">
+                            <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%] block">
                         </div>
+                    </div>
+                    <button id="btn5" class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-[50%] absolute right-[-62px] top-[108px]" onclick="cekBtn5()">
+                        <img src="./assets/imgs/keyboard_arrow_right.svg" alt="keyboard_arrow_right">
+                    </butto>
+                    <button id="btn6" class="w-[42px] h-[42px] p-[9px] bg-gradient-to-r from-pink-200 to-purple-200 rounded-[50%] absolute left-[-62px] top-[108px]" onclick="cekBtn6()">
+                        <img src="./assets/imgs/keyboard_arrow_left.svg" alt="keyboard_arrow_left">
+                    </button>
+                    <div class="flex items-center justify-center gap-4 mt-5">
+                        <span class="block w-4 h-4 rounded-[50%] bg-gradient-to-r  from-purple-500 to-pink-500"></span>
+                        <span class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                        <span class="block w-4 h-4 rounded-[50%] bg-gradient-to-r from-pink-200 to-purple-200"></span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -700,7 +707,7 @@
             <div class="container mx-auto px-4 w-[1262px]">
                 <div class="relative my-10">
                     <div class="overflow-hidden">
-                        <div class="carusel flex items-start ">
+                        <div class="carusel flex items-start duration-1000 ">
                             <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%]  block">
                             <img src="./assets/imgs/image2k.png" alt="img" class="rounded-lg w-[100%] block">
                             <img src="./assets/imgs/image2.png" alt="img" class="rounded-lg w-[100%] block">
