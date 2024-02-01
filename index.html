@@ -6,20 +6,180 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwindcss script js link -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- box icons -->
     <link rel="stylesheet" href="./node_modules/boxicons/css/boxicons.min.css">
+
     <!--Link font  -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mirza:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- LOADER CSS  -->
+    <link rel="stylesheet" href="./style/loader.css">
+
+    <!--Modal css  -->
+    <link rel="stylesheet" href="./style/modal.css">
+
     <!-- link css "loyiha yakunida output.css ulb qo'y !"-->
     <link rel="stylesheet" href="./stayls/index.css">
-    <title>Document</title>
+    <title>Nextstore.uz</title>
 </head>
 
 <body class="bg-[#ECF4FF]">
-    <!-- ---------------- header start ------------------- -->
+    <!-- LOADER COMPONENT START -->
+    <div class="load_wrapper">
+        <span class="loader"></span>
+    </div>
+    <!-- LOADER COMPONENT END-->
 
+    <!--------------------- MODAL CONTENT START -------------------->
+    <div class="container mx-auto px-4 w-[1262px] relative">
+        <div class="modal_wrapper ">
+            <p class="flex items-center justify-between">
+                <span class="inline-block text-[16px] leading-5 font-medium">Alixonov Asrorjon</span>
+                <span id="chiqish" class="inline-block text-red-500 cursor-pointer">Chiqish</span>
+            </p>
+            <ul>
+                <li class="flex items-center gap-3 mt-2">
+                    <img src="./assets/imgs/Vector.svg" alt="Vector" class="block w-4 h-4">
+                    <a href="#" class="block text-[16px] leading-5 font-[439] hover:text-red-500">Shaxsiy ma'lumotlar</a>
+                </li>
+                <li class="flex items-center gap-3 mt-2">
+                    <img src="./assets/imgs/ptichka.svg" alt="Vector" class="block w-4 h-4">
+                    <a href="#" class="block text-[16px] leading-5 font-[439] hover:text-red-500">Mening buyurtmalarim</a>
+                </li>
+                <li class="flex items-center gap-3 mt-2">
+                    <img src="./assets/imgs/favorite-silver.svg" alt="Vector" class="block w-4 h-4">
+                    <a href="#" class="block text-[16px] leading-5 font-[439] hover:text-red-500">Sevimlilar</a>
+                </li>
+                <li class="flex items-center gap-3 mt-2">
+                    <img src="./assets/imgs/locatc.svg" alt="Vector" class="block w-4 h-4">
+                    <a href="#" class="block text-[16px] leading-5 font-[439] hover:text-red-500">Manzillar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--------------------- MODAL CONTENT END --------------------->
+    <!--------------------- MODAL CONTENT END --------------------->
+    <div class="container mx-auto px-4 w-[1262px] relative katalog_wrapper ">
+        <div class="w-[292px] h-[818px] py-5 pl-5 bg-gradient-to-r from-[rgba(246,77,77,0.3)] to-[rgba(77,94,246,0.3)] rounded-l-[20px]">
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300  relative"><img src="./assets/imgs/fire.svg" alt="fire" class="absolute left-[-10px] top-3">Aksiya</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Kompyuterlar va notebooklar</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300 bg-white">Telefonlar</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Maishiy texnika</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Erkaklar uchun kiyim</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Ayollar uchun kiyimlar</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Bolalar uchun </p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Avtomobil mahsulotlari</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Go'zallik va so'glik</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Sport va o'yin-kulgi</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Uy hayvonlari uchun tovarlar</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Xobbi va ijodkorlik</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Kantselyariya buyumlari</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Maishiy kimyo</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Sport va o'yin-kulgi</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Uy hayvonlari uchun tovarlar</p>
+            <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300">Aksesuarlar</p>
+        </div>
+        <div class="flex items-start p-5 gap-[100px] relative">
+            <div>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="mb-[10px] text-[#000000] block font-medium">Brendlar</span>
+                    Samsung <br>
+                    Vivo <br>
+                    Tecno <br>
+                    Realme <br>
+                    Xiaomi <br>
+                    Apple <br>
+                    Artel <br>
+                    Nokia <br>
+                    Infinix <br>
+                    OnePlus <br>
+                    ZTE <br>
+                    Blackview <br>
+                    Oppo <br>
+                    Ergo <br>
+                    BQ <br>
+                    Huawei <br>
+                    Alcatel <br>
+                    TCL <br>
+                    Inoi <br>
+                    <span class="text-blue-600">Ko’proq</span>
+                </p>
+            </div>
+            <div class="grid grid-cols-3 gap-y-[50px] gap-x-[50px]">
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Samsung brendi</span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Redmi & Xiaomi</span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Apple brendi</span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Huawei</span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Eng ommabop </span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Eng arzonlari </span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Huawei mobile</span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Huawei mobile</span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+                <p class="text-[19px] leading-20 p-[10px] text-[#0000009a] ">
+                    <span class="text-[#000000] block font-medium mb-[10px]">Huawei mobile</span>
+                    S serialar <br>
+                    A serialar  <br>
+                    Note serilar  <br>
+                    M serialar <br>
+                </p>
+            </div>
+            <img id="clos" src="./assets/imgs/icons8-cross-mark-48.png" alt="icons" class="block absolute top-[10px] right-[-120px] w-[30px] h-[30px] cursor-pointer">
+        </div>
+    </div>
+    <!--------------------- MODAL CONTENT END --------------------->
+
+
+    <!-- ---------------- header start ------------------- -->
     <head>
         <nav class="bg-white pb-3">
             <div class="container mx-auto px-4 w-[1262px] flex items-center justify-end gap-[221px] mb-[5px]">
@@ -35,8 +195,8 @@
             </div>
             <div class="container mx-auto px-4 w-[1262px] flex items-centerm justify-between my-3">
                 <img src="./assets/imgs/Logo.svg" alt="Logo" class="block h-[50px]">
-                <button
-                    class="bg-gradient-to-r from-purple-500 to-pink-500 py-[11px] px-[19px] text-white text-[16px] font-semibold flex items-center justify-center rounded-md">
+                <button id="katlog"
+                    class="bg-gradient-to-r   from-purple-500 to-pink-500 py-[11px] px-[19px] text-white text-[16px] font-semibold flex items-center justify-center rounded-md">
                     <i class='bx bx-menu'></i>
                     Katalog
                 </button>
@@ -56,9 +216,9 @@
                             <img src="./assets/imgs/shopping.svg" alt="shopping">
                         </a>
                     </p>
-                    <button
+                    <button id="kirish"
                         class="py-[13px] flex items-center justify-center bg-gradient-to-r from-pink-200 to-purple-200 w-[105px] rounded-md">
-                        <a href="#">Kirish</a>
+                        Kirish
                     </button>
                 </div>
             </div>
@@ -190,7 +350,7 @@
                     Eng ko’p sotilgan
                 </h3>
                 <div id="wrapper" class="grid grid-cols-5 gap-y-4 my-5">
-                   <!-- cod dinamic js -->
+                    <!-- cod dinamic js -->
                 </div>
                 <button class="mb-5 w-[100%] bg-white py-[17px] rounded-[10px]">
                     <a href="#" class="text-center text-[18px] font-[591]">Ko’proq ko’rish</a>
@@ -239,7 +399,7 @@
                 </h3>
                 <div id="wrapper2" class="grid grid-cols-5 gap-y-4 my-5">
                     <!-- cod dinamic js -->
-               </div>
+                </div>
                 <button class="mb-5 w-[100%] bg-white py-[17px] rounded-[10px]">
                     <a href="#" class="text-center text-[18px] font-[591]">Ko’proq ko’rish</a>
                 </button>

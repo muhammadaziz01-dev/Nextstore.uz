@@ -17,6 +17,7 @@ let img2 = document.querySelectorAll('.carusel2 img');
 let sum = 0 ;
 
 // console.log(img);
+// --------------------button clic-------------------------
 
 function cekBtn1() {
     sum++;
@@ -82,7 +83,7 @@ function cekBtn6() {
     carusel2.style.transform = `translateX(${-sum * 1230}px)`
 }
 
-//----------------------------------------------------------
+//----------------------------------- Dinamic card --------------------
 let arr =[
     {
         narh: "299 000 so’m" ,
@@ -195,3 +196,57 @@ for(let i = 0 ; i < arr.length; i++){
     wrapper2.appendChild(card);
 
 }
+
+//-----------------------------------Loader  js
+
+let loadWrapper = document.querySelector('.load_wrapper');
+
+window.addEventListener('DOMContentLoaded',()=>{
+    loadWrapper.style.display = 'flex';
+    document.body.style.overflow="hidden";
+});
+
+window.addEventListener('load',()=>{
+
+    setTimeout( ()=>{
+
+        loadWrapper.style.display = 'none';
+        document.body.style.overflow="visible";
+
+    } , 2000)
+  
+});
+
+///---------------------------------MODAL CONTENT 
+
+let modalWrapper = document.querySelector(".modal_wrapper"),
+kirish=document.querySelector("#kirish"),
+chiqish=document.querySelector("#chiqish");
+
+
+kirish.addEventListener("click",()=>{
+    modalWrapper.style.display = "block";
+    document.body.style.overflow = "hidden";
+})
+
+
+chiqish.addEventListener("click",()=>{
+    modalWrapper.style.display = "none";
+    document.body.style.overflow = "visible";
+})
+
+//-----------------------------------------KATALOG
+
+let katalogaWrap = document.querySelector(".katalog_wrapper"),
+katalog=document.querySelector("#katlog"),
+clos=document.querySelector("#clos");
+
+
+katalog.addEventListener("click",()=>{
+    katalogaWrap.style.display = "flex";
+})
+
+
+clos.addEventListener("click",()=>{
+    katalogaWrap.style.display = "none";
+})
