@@ -249,4 +249,37 @@ katalog.addEventListener("click",()=>{
 
 clos.addEventListener("click",()=>{
     katalogaWrap.style.display = "none";
+});
+
+///------------------------------------------------
+
+let modalWrapper2 = document.querySelector(".modal_wrapper2"),
+open=document.querySelector("#login"),
+close=document.querySelector("#close");
+
+
+open.addEventListener("click",()=>{
+    modalWrapper2.style.display = "flex";
+    document.body.style.overflow = "hidden";
+})
+
+
+close.addEventListener("click",()=>{
+    modalWrapper2.style.display = "none";
+    document.body.style.overflow = "visible";
+})
+
+modalWrapper.addEventListener('click', (e)=>{
+
+
+    if( e.target.classList.contains('modal_header') || e.target.classList.contains('modal_body') || e.target.classList.contains('modal_footer') || e.target.classList.contains('modal_title') || e.target.classList.contains("modal_submit")){
+        modalWrapper2.style.display = "flex";
+        console.log(e.target.classList);
+        document.body.style.overflow = "hidden";
+    }else{
+        modalWrapper2.style.display = "none";
+        console.log(e.target.classList)
+        document.body.style.overflow = "visible";
+    }
+
 })

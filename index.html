@@ -27,13 +27,13 @@
 </head>
 
 <body class="bg-[#ECF4FF]">
-    <!-- LOADER COMPONENT START -->
+    <!-- loader component start -->
     <div class="load_wrapper">
         <span class="loader"></span>
     </div>
-    <!-- LOADER COMPONENT END-->
+    <!-- loader component end-->
 
-    <!--------------------- MODAL CONTENT START -------------------->
+    <!--------------------- modal content end  -------------------->
     <div class="container mx-auto px-4 w-[1262px] relative">
         <div class="modal_wrapper ">
             <p class="flex items-center justify-between">
@@ -60,8 +60,8 @@
             </ul>
         </div>
     </div>
-    <!--------------------- MODAL CONTENT END --------------------->
-    <!--------------------- MODAL CONTENT END --------------------->
+    <!--------------------- modal content end  --------------------->
+    <!--------------------- katalog content start --------------------->
     <div class="container mx-auto px-4 w-[1262px] relative katalog_wrapper ">
         <div class="w-[292px] h-[818px] py-5 pl-5 bg-gradient-to-r from-[rgba(246,77,77,0.3)] to-[rgba(77,94,246,0.3)] rounded-l-[20px]">
             <p class="text-[19px] leading-5 cursor-pointer p-[10px] hover:bg-white rounded-l-[3px] duration-200 hover:duration-300  relative"><img src="./assets/imgs/fire.svg" alt="fire" class="absolute left-[-10px] top-3">Aksiya</p>
@@ -176,8 +176,37 @@
             <img id="clos" src="./assets/imgs/icons8-cross-mark-48.png" alt="icons" class="block absolute top-[10px] right-[-120px] w-[30px] h-[30px] cursor-pointer">
         </div>
     </div>
-    <!--------------------- MODAL CONTENT END --------------------->
-
+    <!--------------------- katalog content end --------------------->
+    <!-- royhatdan o'tish bo'limi -->
+        <div class="modal_wrapper2">
+            <div class="modal_content">
+                <div class="modal_header">
+                     <span></span>  <span id="close"> <i class='bx bx-x text-4xl mt-2 mr-2'></i></span>
+                </div>
+    
+                <div class="modal_body py-6">
+    
+                  <h3 class="text-center modal_title font-medium text-2xl"> Telefon raqam orqali kirish</h3>
+                  <form action="#" class="mx-auto w-[60%] py-5">
+                    <label for="username" class="block mb-4">
+                        <input class="py-3  border-2 border-gray-600 px-4 rounded-lg" type="tel" id="username" placeholder="Telefon raqam ">
+                    </label>
+                    <label for="password" class="block">
+                        <input class="py-3  border-2 border-gray-600 px-4 rounded-lg" type="password" id="password" placeholder="Parol ">
+                    </label>
+                    
+                  </form>
+                  <button class="bg-blue-500 modal_submit px-40 py-3 text-white font-normal leading-29 rounded-lg  block mx-auto my-[12px]">
+                    Kirish
+                  </button>
+                  <h4 class="text-center text-blue-500 modal_title  text-l"> Parolni unutdingizmi ?</h4>
+                </div>
+    
+                <div class="modal_footer">
+    
+                </div>
+            </div>
+        </div>
 
     <!-- ---------------- header start ------------------- -->
     <head>
@@ -210,10 +239,10 @@
                 <div class="flex items-center gap-12">
                     <p class="flex items-center gap-6">
                         <a href="#" class="flex items-center justify-center p-[11px] rounded-md bg-[#ECF4FF]">
-                            <img src="./assets/imgs/favorite.svg" alt="favorite">
+                            <img src="./assets/imgs/favorite.svg" alt="favorite" >
                         </a>
                         <a href="#" class="flex items-center justify-center p-[11px] rounded-md bg-[#ECF4FF]">
-                            <img src="./assets/imgs/shopping.svg" alt="shopping">
+                            <img src="./assets/imgs/shopping.svg" alt="shopping" id="login">
                         </a>
                     </p>
                     <button id="kirish"
